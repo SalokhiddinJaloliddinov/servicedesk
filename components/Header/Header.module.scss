@@ -1,25 +1,12 @@
-.primary_color {
-  background: #a30041 !important;
-}
-
-.button {
-  transition: all 1s ease-in-out !important;
-}
-
 .root {
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   align-items: center;
-  //background: #a30041 ;
-  padding: 0 20px;
-  max-width: 95%;
-  margin: auto;
   justify-content: space-between;
-}
-
-.logo {
-  height: 50px;
-  margin-right: 25px;
-  margin-left: 10px;
+  padding: 10px 15px;
+  z-index: 1;
 }
 
 .searchBlock {
@@ -28,8 +15,9 @@
   margin-right: 15px;
   svg {
     position: absolute;
-    top: 7px;
-    left: 5px;
+    top: 10px;
+    font-size: 18px;
+    left: 10px;
     opacity: 0.7;
   }
   input {
@@ -37,16 +25,21 @@
     border-radius: 10px;
     background: rgba(171, 171, 171, 0.18);
     font-size: 14px;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 10px 10px 35px;
     transition: all 0.1s ease-in-out;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background: white;
       border-color: darken(#a30041, 10%);
-      box-shadow: 0 0 0 3px #A300411E;
+      box-shadow: 0 0 0 3px #a300411e;
       color: black;
     }
     &:focus {
       outline: 1px solid white;
     }
   }
+}
+
+.notification_button {
+  margin-left: 10px !important;
 }

@@ -1,0 +1,49 @@
+.menu {
+  width: 200px;
+  position: sticky;
+  top: 80px;
+
+  .user_pages {
+    margin-bottom: 50px;
+  }
+
+  .pages_name {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 4px;
+
+      button {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 7px 10px;
+        text-transform: inherit;
+        font-size: 13px;
+        font-weight: 400;
+        box-shadow: none;
+
+        span[class*='MuiButton-label'] {
+          display: flex;
+          align-items: center;
+        }
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  height: 40px;
+  fill: #a30041;
+  margin-bottom: 15px;
+}

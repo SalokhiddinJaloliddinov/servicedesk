@@ -6,6 +6,14 @@ export const theme = createTheme({
       disableRipple: true,
     },
   },
+  palette: {
+    primary: {
+      main: "#a30041",
+    },
+    secondary: {
+      main: "#fffff",
+    },
+  },
   overrides: {
     MuiButton: {
       contained: {

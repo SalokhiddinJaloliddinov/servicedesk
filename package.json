@@ -22,6 +22,7 @@
     "@mui/material": "^5.10.4",
     "@mui/styled-engine-sc": "^5.10.3",
     "@mui/styles": "^5.10.3",
+    "@nestjs/mapped-types": "*",
     "@reduxjs/toolkit": "^1.8.5",
     "axios": "^0.27.2",
     "clsx": "^1.2.1",

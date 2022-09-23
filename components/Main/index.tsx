@@ -40,45 +40,5 @@ export const Main: React.FC = () => {
 
   // const onSubmit = (data: any) => console.log(data);
   console.log(form.formState.errors);
-  return (
-    <div>
-      {!userData ? (
-        <form onSubmit={form.handleSubmit(onSubmit)}>
-          <TextField
-            {...form.register("login")}
-            name="login"
-            className={"mb-20"}
-            size={"small"}
-            label={"Логин"}
-            variant={"outlined"}
-            error={!!form.formState.errors.login?.message}
-            helperText={form.formState.errors.login?.message}
-            fullWidth
-          />
-          <TextField
-            {...form.register("password")}
-            name="password"
-            size={"small"}
-            label={"Пароль"}
-            error={!!form.formState.errors.password?.message}
-            helperText={form.formState.errors.password?.message}
-            variant={"outlined"}
-            fullWidth
-            type={"password"}
-          />
-          {errorMessage && <Alert severity={"error"}>{errorMessage}</Alert>}
-          <Button
-            type="submit"
-            color="primary"
-            variant={"contained"}
-            disabled={form.formState.isSubmitting}
-          >
-            Войти
-          </Button>
-        </form>
-      ) : (
-        "login successfull"
-      )}
-    </div>
-  );
+  return <>{userData ? <div>You are auth</div> : "You are not auth"}</>;
 };

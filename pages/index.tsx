@@ -25,17 +25,3 @@ export default function Home() {
     </div>
   );
 }
-
-export const getServerSideProps: GetServerSideProps =
-  wrapper.getServerSideProps((store) => async (context) => {
-    try {
-      const { sd_token } = parseCookies(context);
-      const userData = await UserApi.getProfile(sd_token);
-      store.dispatch(setUserData(userData));
-      console.log(userData);
-      return { props: {} };
-    } catch (err) {
-      console.log(err);
-      return { props: {} };
-    }
-  });

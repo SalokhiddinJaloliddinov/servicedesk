@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.logo {
+  margin-top: -50px;
+  margin-bottom: 30px;
+  height: 60px;
+  fill: #a30041;
+}
+
+.login {
+  padding: 20px 0;
+  border-radius: 20px;
+  display: flex;
+  background: #ffffff;
+  border: 2px solid #a30041;
+  flex-direction: column;
+  width: 550px;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__welcome {
+    margin-bottom: 40px !important;
+  }
+
+  &__button {
+    width: 50%;
+  }
+
+  &__form {
+    width: 100%;
+    margin-bottom: 20px !important;
+    transition: 0.2s all ease-in-out;
+  }
+}

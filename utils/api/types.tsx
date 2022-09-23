@@ -10,3 +10,9 @@ export type ResponseLogin = {
   login: string;
   status: string;
 };
+
+export type CreateTicketDto = {
+  title: string;
+  description: string;
+  caller_id: number;
+};

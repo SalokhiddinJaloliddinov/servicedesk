@@ -1,8 +1,9 @@
 import React from "react";
 import { NextPage } from "next";
+import { Login } from "../../components/Login";
 
-const WritePage: NextPage = () => {
-  return <div>Test Page</div>;
+const LoginPage: NextPage = () => {
+  return <Login></Login>;
 };
 
-export default WritePage;
+export default LoginPage;
